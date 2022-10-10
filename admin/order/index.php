@@ -5,7 +5,7 @@
     <div class="py-4">
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Pertandingan</h1>
+                <h1 class="h4">Pesanan</h1>
             </div>
         </div>
     </div>
@@ -15,21 +15,13 @@
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Tanggal</th>
-                        <th>Klub</th>
-                        <th>Hasil</th>
+                        <th>Nama</th>
+                        <th>Tipe</th>
+                        <th>Layanan</th>
                         <th>Stadium</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>2022-01-01 12:10</td>
-                        <td>Klub 1 - Klub 2</td>
-                        <td>1 - 2</td>
-                        <td>Stadium A</td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
     </div>

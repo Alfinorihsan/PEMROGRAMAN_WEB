@@ -56,7 +56,7 @@
                         </div>
                         <!-- left Btn -->
                         <div class="header-right-btn f-right d-none d-lg-block  ml-30">
-                            <a href="#" class="header-btn">Login</a>
+                            <a href="../../auth/login.php" class="header-btn">Login</a>
                         </div>
                     </div>
                     <!-- Mobile Menu -->

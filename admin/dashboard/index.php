@@ -4,53 +4,81 @@
 <div id="main" class="min-vh-100 pt-4">
     <div class="row">
         <div class="col-12 mb-4">
-            <h2 class="h4">Selamat Datang, <?= $_SESSION['email'] ?></h2>
+            <h2 class="h4">Selamat Datang, <?= $_SESSION['username'] ?></h2>
         </div>
-        <div class="col-12 mb-4">
-            <div class="card bg-yellow-100 border-0 shadow">
-                <div class="card-header d-sm-flex flex-row align-items-center flex-0">
-                    <div class="d-block mb-3 mb-sm-0">
-                        <div class="fs-5 fw-normal mb-2">Sales Value</div>
-                        <h2 class="fs-3 fw-extrabold">$10,567</h2>
-                        <div class="small mt-2"><span class="fw-normal me-2">Yesterday</span> <span class="fas fa-angle-up text-success"></span> <span class="text-success fw-bold">10.57%</span></div>
+        <div class="row">
+            <div class="col-12 col-md-8 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h2 class="fs-5 fw-bold mb-0">Pesanan Terakhir</h2>
+                            </div>
+                            <div class="col text-end"><a href="#" class="btn btn-sm btn-primary">Lihat Semua</a></div>
+                        </div>
                     </div>
-                    <div class="d-flex ms-auto"><a href="#" class="btn btn-secondary text-dark btn-sm me-2">Month</a> <a href="#" class="btn btn-dark btn-sm me-3">Week</a></div>
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="border-bottom" scope="col">Nama</th>
+                                    <th class="border-bottom" scope="col">Jenis</th>
+                                    <th class="border-bottom" scope="col">Ukuran</th>
+                                    <th class="border-bottom" scope="col">Tanggal Ambil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-gray-900" scope="row">Ananta</th>
+                                    <td class="fw-bolder text-gray-500">Baju</td>
+                                    <td class="fw-bolder text-gray-500">24-40-10</td>
+                                    <td class="fw-bolder text-gray-500">19 Jan</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="card-body p-2">
-                    <div class="ct-chart-sales-value ct-double-octave ct-series-g">
-                        <div class="chartist-tooltip" style="top: 55.6094px; left: 449px;"></div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;">
-                            <g class="ct-grids">
-                                <line x1="50" x2="50" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="292" x2="292" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="534" x2="534" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="776" x2="776" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="1018" x2="1018" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="1260" x2="1260" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                                <line x1="1502" x2="1502" y1="15" y2="344.25" class="ct-grid ct-horizontal"></line>
-                            </g>
-                            <g>
-                                <g class="ct-series ct-series-a">
-                                    <path d="M50,344.25L50,344.25C130.667,333.275,211.333,325.958,292,311.325C372.667,296.692,453.333,260.108,534,245.475C614.667,230.842,695.333,230.11,776,212.55C856.667,194.99,937.333,80.85,1018,80.85C1098.667,80.85,1179.333,146.7,1260,146.7C1340.667,146.7,1421.333,58.9,1502,15L1502,344.25Z" class="ct-area"></path>
-                                    <path d="M50,344.25C130.667,333.275,211.333,325.958,292,311.325C372.667,296.692,453.333,260.108,534,245.475C614.667,230.842,695.333,230.11,776,212.55C856.667,194.99,937.333,80.85,1018,80.85C1098.667,80.85,1179.333,146.7,1260,146.7C1340.667,146.7,1421.333,58.9,1502,15" class="ct-line"></path>
-                                    <line x1="50" y1="344.25" x2="50.01" y2="344.25" class="ct-point" ct:value="0"></line>
-                                    <line x1="292" y1="311.325" x2="292.01" y2="311.325" class="ct-point" ct:value="10"></line>
-                                    <line x1="534" y1="245.475" x2="534.01" y2="245.475" class="ct-point" ct:value="30"></line>
-                                    <line x1="776" y1="212.55" x2="776.01" y2="212.55" class="ct-point" ct:value="40"></line>
-                                    <line x1="1018" y1="80.85000000000002" x2="1018.01" y2="80.85000000000002" class="ct-point" ct:value="80"></line>
-                                    <line x1="1260" y1="146.7" x2="1260.01" y2="146.7" class="ct-point" ct:value="60"></line>
-                                    <line x1="1502" y1="15" x2="1502.01" y2="15" class="ct-point" ct:value="100"></line>
-                                </g>
-                            </g>
-                            <g class="ct-labels">
-                                <foreignObject style="overflow: visible;" x="50" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Mon</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="292" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Tue</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="534" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Wed</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="776" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Thu</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="1018" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Fri</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="1260" y="349.25" width="242" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 242px; height: 20px;">Sat</span></foreignObject>
-                                <foreignObject style="overflow: visible;" x="1502" y="349.25" width="30" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 30px; height: 20px;">Sun</span></foreignObject>
-                            </g>
-                        </svg>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-header border-bottom d-flex align-items-center justify-content-between">
+                        <h2 class="fs-5 fw-bold mb-0">Progres Pengerjaan</h2><a href="#" class="btn btn-sm btn-primary">Lihat Semua</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-auto"><svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                                </svg></div>
+                            <div class="col">
+                                <div class="progress-wrapper">
+                                    <div class="progress-info">
+                                        <div class="h6 mb-0">Jahit Baju</div>
+                                        <div class="small fw-bold text-gray-500"><span>75 %</span></div>
+                                    </div>
+                                    <div class="progress mb-0">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-auto"><svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                                </svg></div>
+                            <div class="col">
+                                <div class="progress-wrapper">
+                                    <div class="progress-info">
+                                        <div class="h6 mb-0">Jahit Celana</div>
+                                        <div class="small fw-bold text-gray-500"><span>45 %</span></div>
+                                    </div>
+                                    <div class="progress mb-0">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

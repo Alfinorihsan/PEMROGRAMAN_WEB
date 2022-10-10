@@ -1,7 +1,7 @@
-<nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+<nav class="navbar navbar-light navbar-theme-primary px-4 col-12 d-lg-none">
   <a class="navbar-brand me-lg-5" href="../../assets/dashboard/index.html">
-    <img class="navbar-brand-dark" src="../../assets/img/logo.png" alt="Volt logo" /> 
-    <img class="navbar-brand-light" src="../../assets/img/logo.png" alt="Volt logo" />
+    <img class="navbar-brand-dark" src="../../assets/web/img/logo/logo.png" alt="Volt logo" /> 
+    <img class="navbar-brand-light" src="../../assets/web/img/logo/logo.png" alt="Volt logo" />
   </a>
   <div class="d-flex align-items-center">
     <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,12 +9,12 @@
     </button>
   </div>
 </nav>
-<nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+<nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-300 text-dark collapse" data-simplebar>
   <div class="sidebar-inner px-4 pt-3">
     <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
       <div class="d-flex align-items-center">
         <div class="d-block">
-          <h2 class="h5 mb-3"><?= $_SESSION['email'] ?></h2>
+          <h2 class="h5 mb-3"><?= $_SESSION['username'] ?></h2>
           <a href="../../auth/logout.php" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
             <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>            
             Sign Out
@@ -43,7 +43,7 @@
             <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="media d-flex align-items-center">
                 <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                  <span class="mb-0 font-small fw-bold text-gray-900"><?= $_SESSION['email'] ?></span>
+                  <span class="mb-0 font-small fw-bold text-gray-900"><?= $_SESSION['username'] ?></span>
                 </div>
               </div>
             </a>
