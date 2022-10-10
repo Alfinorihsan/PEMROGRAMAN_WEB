@@ -1,179 +1,154 @@
 <?php require_once('../../layouts/web/header.php') ?>
 
-<div class="hero overlay" style="background-image: url('../../assets/web/images/bg_3.jpg');">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 ml-auto">
-                <h1 class="text-white">Pochinki Premier League</h1>
-                <p>Only Place You Need About Your Football</p>
-                <p>
-                    <a href="../../auth/login.php" class="btn btn-primary py-3 px-4 mr-3">Login</a>
-                    <a href="../../auth/login.php" class="more light">Register</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="d-flex team-vs">
-                <span class="score">4-1</span>
-                <div class="team-1 w-50">
-                    <div class="team-details w-100 text-center">
-                        <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" alt="Image" class="img-fluid">
-                        <h3>LA LEGA <span>(win)</span></h3>
-                        <ul class="list-unstyled">
-                            <li>Anja Landry (7)</li>
-                            <li>Eadie Salinas (12)</li>
-                            <li>Ashton Allen (10)</li>
-                            <li>Baxter Metcalfe (5)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-2 w-50">
-                    <div class="team-details w-100 text-center">
-                        <img src="https://resources.premierleague.com/premierleague/badges/t43.svg" alt="Image" class="img-fluid">
-                        <h3>JUVENDU <span>(loss)</span></h3>
-                        <ul class="list-unstyled">
-                            <li>Macauly Green (3)</li>
-                            <li>Arham Stark (8)</li>
-                            <li>Stephan Murillo (9)</li>
-                            <li>Ned Ritter (5)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="site-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="widget-next-match">
-                    <div class="widget-title">
-                        <h3>Next Match</h3>
-                    </div>
-                    <div class="widget-body mb-3">
-                        <div class="widget-vs">
-                            <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
-                                <div class="team-1 text-center">
-                                    <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" alt="Image" style="height: 110px; width: 110px;">
-                                    <h3>MU</h3>
-                                </div>
-                                <div>
-                                    <span class="vs"><span>VS</span></span>
-                                </div>
-                                <div class="team-2 text-center">
-                                    <img src="https://resources.premierleague.com/premierleague/badges/t43.svg" alt="Image" style="height: 110px; width: 110px;">
-                                    <h3>MC</h3>
-                                </div>
+<main>
+    <!--? slider Area Start-->
+    <div class="slider-area  position-relative ">
+        <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider position-relative hero-overly slider-height  d-flex align-items-center" data-background="../../assets/web/img/hero/h1_hero.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="hero-caption">
+                                <img class="rotateme" src="../../assets/web/img/hero/hero-icon.png" alt="" data-animation="zoomIn" data-delay="1s">
+                                <h1 data-animation="fadeInLeft" data-delay=".4s">Kami membuat pakaian yang cocok untuk Anda</h1>
+                                <a href="#" class="btn" data-animation="fadeInLeft" data-delay=".8s">Login</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="text-center widget-vs-contents mb-4">
-                        <h4>World Cup League</h4>
-                        <p class="mb-5">
-                            <span class="d-block">December 20th, 2020</span>
-                            <span class="d-block">9:30 AM GMT+0</span>
-                            <strong class="text-primary">New Euro Arena</strong>
-                        </p>
-
-                        <div id="date-countdown2" class="pb-1"></div>
-                    </div>
+                </div>
+                <!-- Left img -->
+                <div class="hero-img">
+                    <img src="https://images.unsplash.com/photo-1621370688441-8ce43a9903dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" data-animation="fadeInRight" data-transition-duration="5s" style="background-size: cover; object-fit: cover;">
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="widget-next-match">
-                    <table class="table custom-table">
-                        <thead>
-                            <tr>
-                                <th>P</th>
-                                <th>Team</th>
-                                <th>W</th>
-                                <th>D</th>
-                                <th>L</th>
-                                <th>PTS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><strong class="text-white">Football League</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><strong class="text-white">Soccer</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><strong class="text-white">Juvendo</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><strong class="text-white">French Football League</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td><strong class="text-white">Legia Abante</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td><strong class="text-white">Gliwice League</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td><strong class="text-white">Cornika</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td><strong class="text-white">Gravity Smash</strong></td>
-                                <td>22</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>140</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Single Slider -->
+            <div class="single-slider position-relative hero-overly slider-height  d-flex align-items-center" data-background="../../assets/web/img/hero/h1_hero.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="hero-caption">
+                                <img class="rotateme" src="../../assets/web/img/hero/hero-icon.png" alt="" data-animation="zoomIn" data-delay="1s">
+                                <h1 data-animation="fadeInLeft" data-delay=".4s">We make cloths that suit you</h1>
+                                <p data-animation="fadeInLeft" data-delay=".6s">TLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse varius enim in eros elementum tristique. Duis
+                                    cursus, mi quis viverra ornare.</p>
+                                <!-- Hero Btn -->
+                                <a href="#" class="btn" data-animation="fadeInLeft" data-delay=".8s">Our Services</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <!-- Left img -->
+                <div class="hero-img">
+                    <img src="../../assets/web/img/hero/h1_hero1.png" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- slider Area End-->
+    <!--? Clients Offers Start -->
+    <div class="clients-area section-padding40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="offers-img">
+                            <img src="../../assets/web/img/gallery/offers1.png" alt="">
+                        </div>
+                        <div class="offers-cap">
+                            <span>1</span>
+                            <h3><a href="services.html">Penjahitan</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="offers-img">
+                            <img src="../../assets/web/img/gallery/offers2.png" alt="">
+                        </div>
+                        <div class="offers-cap">
+                            <span>2</span>
+                            <h3><a href="services.html">Pengukuran</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="offers-img">
+                            <img src="../../assets/web/img/gallery/offers3.png" alt="">
+                        </div>
+                        <div class="offers-cap">
+                            <span>3</span>
+                            <h3><a href="services.html">Siap Pakai</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="categories-area section-padding40">
+        <div class="container">
+            <!-- section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
+                    <div class="section-tittle text-center mb-60">
+                        <h2>Kenapa Kami?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="cat-icon">
+                            <img src="../../assets/web/img/icon/services1.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Tepat</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="cat-icon">
+                            <img src="../../assets/web/img/icon/services2.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Cepat</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="cat-icon">
+                            <img src="../../assets/web/img/icon/services3.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Mudah</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="cat-icon">
+                            <img src="../../assets/web/img/icon/services4.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5>Murah</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <?php require_once('../../layouts/web/footer.php') ?>
