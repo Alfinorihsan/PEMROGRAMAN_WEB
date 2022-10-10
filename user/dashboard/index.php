@@ -7,9 +7,9 @@
           <h2 class="h4">Selamat Datang, <?= $_SESSION['username'] ?></h2>
         </div>
         <div class="col-12 text-center">
-            <img src="../../assets/img/lineup.png" alt="" class="img-fluid" style="height: 500px">
-            <h5 style="font-weight: bold;">Kayaknya belum ada nih klub kesenenanganmu</h5>
-            <button class="btn btn-primary">Tambahkan Watch List</button>
+            <img src="../../assets/img/Measure-pana.png" alt="" class="img-fluid" style="height: 300px">
+            <h5 style="font-weight: bold;">Kamu belum ada buat pesanan</h5>
+            <button class="btn btn-primary">Buat Pesanan Sekarang</button>
         </div>
     </div>
 </div>

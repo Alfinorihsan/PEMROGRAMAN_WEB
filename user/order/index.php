@@ -5,7 +5,7 @@
     <div class="py-4">
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Tables</h1>
+                <h1 class="h4">Pesanan</h1>
             </div>
         </div>
     </div>
@@ -15,23 +15,12 @@
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Klub</th>
-                        <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
-                        <th>PTS</th>
+                        <th>Jenis</th>
+                        <th>Layanan</th>
+                        <th>Tanggal Ambil</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>Klub 1</td>
-                        <td>22</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>140</td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
     </div>
