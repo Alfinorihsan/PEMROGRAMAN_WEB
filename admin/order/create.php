@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <label for="birthday">Nama</label>
-                        <input class="form-control" id="birthday" type="number" required>
+                        <input class="form-control" id="birthday" type="text" required>
                     </div>
                     <div class="col-md-7 col-12 mb-3">
                         <label for="type">Tipe Pakaian</label>
