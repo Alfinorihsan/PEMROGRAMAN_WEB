@@ -58,8 +58,8 @@
                         </div>
                         <div class="offers-cap">
                             <span>1</span>
-                            <h3><a href="services.html">Penjahitan</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <h3><a href="services.html">Pengukuran</a></h3>
+                            <p>Karena pakaian tersebut khusus untuk anda dan hanya untuk anda seorang.</p>
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,8 @@
                         </div>
                         <div class="offers-cap">
                             <span>2</span>
-                            <h3><a href="services.html">Pengukuran</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <h3><a href="services.html">Penjahitan</a></h3>
+                            <p>Setelah itu biarkan penjahit terbaik kami bekerja. Tunggu dan nantikanlah pakaian terbaik anda.</p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <div class="offers-cap">
                             <span>3</span>
                             <h3><a href="services.html">Siap Pakai</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <p>Pakaian impian milik anda siap untuk di pakai untuk setiap momen terbaik anda.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
                     <div class="section-tittle text-center mb-60">
                         <h2>Kenapa Kami?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <p>Sebab kami selalu menjamin kepuasan pelanggan kami dengan 4 aspek utama.</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5>Tepat</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <p>Sebuah pakaian terbaik akan selalu tepat dan pas dengan orang yang menggunakannya.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5>Cepat</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <p>Waktu adalah emas, oleh karena itu kami akan melakukan pekerjaan dengan cepat dan tentunya teliti.</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5>Mudah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <p>Mempunyai pakaian yang sempurna bukanlah hal yang sulit diwujudkan, karena itu biarkan kami mempermudah segalanya.</p>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5>Murah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <p>Pakaian yang sempurna tidaklah selalu mahaL, sebab itu kami selalu memberikan layanan terbaik dengan harga terbaik.</p>
                         </div>
                     </div>
                 </div>

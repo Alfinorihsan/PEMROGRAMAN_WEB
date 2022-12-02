@@ -13,8 +13,8 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <ul class="mb-40">
-                                        <li class="number"><a href="#">(80) 783 367-3904</a></li>
-                                        <li class="number2"><a href="#">(80) 783 367-3904</a></li>
+                                        <li class="number"><a href="#">0812 4883 9349</a></li>
+                                        <li class="number2"><a href="#">mawartailors@gmail.com</a></li>
                                     </ul>
                                 </div>
                                 <!-- social -->

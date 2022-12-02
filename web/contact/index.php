@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <button type="submit" class="button button-contactForm boxed-btn">KIRIM</button>
                         </div>
                     </form>
                 </div>
@@ -65,22 +65,22 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
-                            <h3>Buttonwood, California.</h3>
-                            <p>Rosemead, CA 91770</p>
+                            <h3>Kota Bangun, Kukar.</h3>
+                            <p>Jln. Sri Bangun, RT 21</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                         <div class="media-body">
-                            <h3>+1 253 565 2365</h3>
-                            <p>Mon to Fri 9am to 6pm</p>
+                            <h3>0812 4883 9349</h3>
+                            <p>Setiap Hari 7 AM - 10 PM</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
                         <div class="media-body">
-                            <h3>support@colorlib.com</h3>
-                            <p>Send us your query anytime!</p>
+                            <h3>mawartailors@gmail.com</h3>
+                            <p>Kirimkan lah kritik dan saran kepada kami!</p>
                         </div>
                     </div>
                 </div>
