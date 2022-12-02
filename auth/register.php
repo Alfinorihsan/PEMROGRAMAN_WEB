@@ -12,25 +12,21 @@ if (isset($_SESSION['status'])) {
 }
 
 if (isset($_POST['username'])) {
-
   $user = query("SELECT * FROM pengguna WHERE username='{$_POST['username']}'");
-  if (empty($user)) {
-    header("Location:./login.php?denied=true");
+  if (!empty($user)) {
+    header("Location:./register.php?denied=true");
   }
-  $user = $user[0];
-  $isPasswordCorrect = password_verify($_POST['password'], $user['password']);
-  if (!$isPasswordCorrect) {
-    header("Location:./login.php?denied=true");
-  }
-  $_SESSION['nama'] = $user['nama'];
-  $_SESSION['id'] = $user['id'];
-  $_SESSION['role'] = $user['role'] == 1 ? 'admin' : 'user';
+  $user_id = store("pengguna", [
+    "nama" => $_POST['nama'],
+    "username" => $_POST['username'],
+    "password" => password_hash($_POST['password'], PASSWORD_DEFAULT),
+    "role" => 2
+  ]);
+  $_SESSION['nama'] = $_POST['nama'];
+  $_SESSION['id'] = $user_id;
+  $_SESSION['role'] = 'user';
   $_SESSION['status'] = "login";
-  if ($_SESSION['role'] == 'admin') {
-    header("Location:../admin/dashboard");
-  } else {
-    header("Location:../user/dashboard");
-  }
+  header("Location:../user/dashboard");
 }
 ?>
 <?php require_once('../layouts/auth/header.php') ?>
@@ -39,9 +35,21 @@ if (isset($_POST['username'])) {
     <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
       <div class="text-center text-md-center mb-4 mt-md-0">
         <img src="../assets/web/img/logo/logo.png" style="height: 100px;" alt="">
-        <h5>Login</h5>
+        <h5>Register</h5>
       </div>
+      <?php if (isset($_GET['denied'])) : ?>
+        <div class="alert alert-error">
+          <span>Username sudah ada!</span>
+        </div>
+      <?php endif; ?>
       <form action="" class="mt-4" method="POST">
+        <!-- Form -->
+        <div class="form-group mb-4">
+          <label for="nama">Nama</label>
+          <div class="input-group">
+            <input type="text" name="nama" class="form-control" placeholder="nama" id="nama" autofocus required>
+          </div>
+        </div>
         <!-- Form -->
         <div class="form-group mb-4">
           <label for="username">Username</label>
@@ -60,7 +68,7 @@ if (isset($_POST['username'])) {
           </div>
           <!-- End of Form -->
           <div class="d-flex justify-content-between align-items-top mb-4">
-            <div><a href="./register.php" class="small text-right">Belum punya akun? Register!</a></div>
+            <div><a href="./login.php" class="small text-right">Sudah punya akun? Login!</a></div>
           </div>
         </div>
         <div class="d-grid">

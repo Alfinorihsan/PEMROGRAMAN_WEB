@@ -1,15 +1,15 @@
 <?php require_once('../../layouts/admin/header.php') ?>
-
 <?php
-$users = all("pengguna");
+$services = all("layanan");
 ?>
 
 <div id="main" class="min-vh-100 pt-4">
     <div class="py-4">
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Daftar Pengguna</h1>
+                <h1 class="h4">Daftar Layanan</h1>
             </div>
+            <a href="./create.php" class="btn btn-primary">Tambah Data</a>
         </div>
     </div>
     <div class="card border-0 shadow components-section">
@@ -19,23 +19,27 @@ $users = all("pengguna");
                     <tr>
                         <th></th>
                         <th>Nama</th>
-
-                        <th>Username</th>
-                        <th>Hak Akses</th>
+                        <th>Harga</th>
+                        <th>Deskripsi</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i = 1 ?>
-                    <?php foreach ($users as $user) : ?>
+                    <?php $i = 1; ?>
+                    <?php foreach ($services as $service) : ?>
                         <tr>
                             <th><?= $i ?></th>
-                            <td><?= $user['nama'] ?></td>
-
-                            <td><?= $user['username'] ?></td>
-                            <td><?= $user['role'] == 1 ? 'admin' : 'pengguna' ?></td>
+                            <td><?= $service['nama'] ?></td>
+                            <td>Rp. <?= number_format($service['harga']) ?></td>
+                            <td><?= $service['deskripsi'] ?></td>
+                            <td>
+                                <a href="./delete.php?id=<?= $service['id'] ?>" class="btn btn-sm btn-danger">Hapus</a>
+                                <a href="./edit.php?id=<?= $service['id'] ?>" class="btn btn-sm btn-warning">Ubah</a>
+                            </td>
                         </tr>
                         <?php $i++ ?>
                     <?php endforeach; ?>
+
                 </tbody>
             </table>
         </div>

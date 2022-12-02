@@ -27,8 +27,24 @@
   <li class="nav-item">
     <a href="../../admin/order" class="nav-link d-flex justify-content-between">
       <span>
-        <span class="sidebar-icon"><i class="fa-solid fa-futbol"></i></span>
+        <span class="sidebar-icon"><i class="fa-solid fa-shirt"></i></span>
         <span class="sidebar-text">Pesanan</span>
+      </span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="../../admin/service" class="nav-link d-flex justify-content-between">
+      <span>
+        <span class="sidebar-icon"><i class="fa-solid fa-mitten"></i></span>
+        <span class="sidebar-text">Layanan</span>
+      </span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="../../admin/user" class="nav-link d-flex justify-content-between">
+      <span>
+        <span class="sidebar-icon"><i class="fa-solid fa-user"></i></span>
+        <span class="sidebar-text">Daftar Pengguna</span>
       </span>
     </a>
   </li>
