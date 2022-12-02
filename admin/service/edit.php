@@ -1,7 +1,7 @@
 <?php require_once('../../layouts/admin/header.php') ?>
 
 <?php 
-  $service = find("gitar", $_GET['id']);
+  $service = find("layanan", $_GET['id']);
 ?>
 <?php
   if(isset($_POST['submit'])) {
